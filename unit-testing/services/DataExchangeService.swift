@@ -10,8 +10,8 @@ import UIKit
 
 class DataExchangeService {
     
-    func validateInput(viewElement: UITextField) -> String {
-        switch viewElement.text {
+    func validateInput(inputText: String?) -> String {
+        switch inputText {
             case .some(let text): return "Hello \(text)"
             case .none: return "You didn't enter anything!"
         }

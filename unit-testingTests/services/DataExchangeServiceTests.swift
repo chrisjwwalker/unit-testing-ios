@@ -11,10 +11,26 @@ import XCTest
 
 class DataExchangeServiceTests: XCTestCase {
     
-    let testService: DataExchangeService = DataExchangeService()
+    var testService: DataExchangeService!
     
-    func testExample() {
-        var textInput = UITextInput()
+    override func setUp() {
+        testService = DataExchangeService()
+    }
+    
+    override func tearDown() {
+        testService = nil
+    }
+    
+    func testValidateInputWithSomeInput() {
+        let testName: String? = "Chris"
+        XCTAssertEqual(testService.validateInput(inputText: testName), "Hello Chris", "Output was not equal to 'Hello \(testName!)'")
+    }
+    
+    func testValidateInputWithNoInput() {
+        func testValidateInputWithSomeInput() {
+            let testName: String? = nil
+            XCTAssertEqual(testService.validateInput(inputText: testName), "You didn't enter anything", "Output was not equal to 'You didn't enter anything'")
+        }
     }
 }
 
