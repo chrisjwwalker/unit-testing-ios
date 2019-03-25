@@ -14,6 +14,12 @@
 		5B6B72992244EAA700A344E6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5B6B72972244EAA700A344E6 /* LaunchScreen.storyboard */; };
 		5B6B72A42244EAA700A344E6 /* unit_testingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B6B72A32244EAA700A344E6 /* unit_testingTests.swift */; };
 		5B6B72AF2244EAA700A344E6 /* unit_testingUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B6B72AE2244EAA700A344E6 /* unit_testingUITests.swift */; };
+		5B6B72C42244EBD500A344E6 /* AlertDialog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B6B72C32244EBD500A344E6 /* AlertDialog.swift */; };
+		5B6B72C52244EBD500A344E6 /* AlertDialog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B6B72C32244EBD500A344E6 /* AlertDialog.swift */; };
+		5B6B72C82244ECB500A344E6 /* DataExchangeService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B6B72C72244ECB500A344E6 /* DataExchangeService.swift */; };
+		5B6B72C92244ECB500A344E6 /* DataExchangeService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B6B72C72244ECB500A344E6 /* DataExchangeService.swift */; };
+		5B6B72CD2244F02400A344E6 /* DataExchangeServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B6B72CA2244EEC900A344E6 /* DataExchangeServiceTests.swift */; };
+		5B6B72D02244F09000A344E6 /* DataExchangeServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B6B72CA2244EEC900A344E6 /* DataExchangeServiceTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +53,9 @@
 		5B6B72AA2244EAA700A344E6 /* unit-testingUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "unit-testingUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5B6B72AE2244EAA700A344E6 /* unit_testingUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = unit_testingUITests.swift; sourceTree = "<group>"; };
 		5B6B72B02244EAA700A344E6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5B6B72C32244EBD500A344E6 /* AlertDialog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertDialog.swift; sourceTree = "<group>"; };
+		5B6B72C72244ECB500A344E6 /* DataExchangeService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataExchangeService.swift; sourceTree = "<group>"; };
+		5B6B72CA2244EEC900A344E6 /* DataExchangeServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataExchangeServiceTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,12 +106,15 @@
 		5B6B728D2244EAA400A344E6 /* unit-testing */ = {
 			isa = PBXGroup;
 			children = (
-				5B6B728E2244EAA400A344E6 /* AppDelegate.swift */,
-				5B6B72902244EAA400A344E6 /* ViewController.swift */,
-				5B6B72922244EAA400A344E6 /* Main.storyboard */,
 				5B6B72952244EAA700A344E6 /* Assets.xcassets */,
-				5B6B72972244EAA700A344E6 /* LaunchScreen.storyboard */,
+				5B6B72C12244EB0D00A344E6 /* config */,
+				5B6B72BF2244EADF00A344E6 /* connectors */,
+				5B6B72BC2244EAC300A344E6 /* controllers */,
 				5B6B729A2244EAA700A344E6 /* Info.plist */,
+				5B6B72BE2244EAD900A344E6 /* models */,
+				5B6B72BD2244EACE00A344E6 /* services */,
+				5B6B72C22244EBA200A344E6 /* uiComponents */,
+				5B6B72C02244EAEC00A344E6 /* views */,
 			);
 			path = "unit-testing";
 			sourceTree = "<group>";
@@ -110,6 +122,7 @@
 		5B6B72A22244EAA700A344E6 /* unit-testingTests */ = {
 			isa = PBXGroup;
 			children = (
+				5B6B72C62244EC7B00A344E6 /* services */,
 				5B6B72A32244EAA700A344E6 /* unit_testingTests.swift */,
 				5B6B72A52244EAA700A344E6 /* Info.plist */,
 			);
@@ -123,6 +136,69 @@
 				5B6B72B02244EAA700A344E6 /* Info.plist */,
 			);
 			path = "unit-testingUITests";
+			sourceTree = "<group>";
+		};
+		5B6B72BC2244EAC300A344E6 /* controllers */ = {
+			isa = PBXGroup;
+			children = (
+				5B6B72902244EAA400A344E6 /* ViewController.swift */,
+			);
+			path = controllers;
+			sourceTree = "<group>";
+		};
+		5B6B72BD2244EACE00A344E6 /* services */ = {
+			isa = PBXGroup;
+			children = (
+				5B6B72C72244ECB500A344E6 /* DataExchangeService.swift */,
+			);
+			path = services;
+			sourceTree = "<group>";
+		};
+		5B6B72BE2244EAD900A344E6 /* models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = models;
+			sourceTree = "<group>";
+		};
+		5B6B72BF2244EADF00A344E6 /* connectors */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = connectors;
+			sourceTree = "<group>";
+		};
+		5B6B72C02244EAEC00A344E6 /* views */ = {
+			isa = PBXGroup;
+			children = (
+				5B6B72972244EAA700A344E6 /* LaunchScreen.storyboard */,
+				5B6B72922244EAA400A344E6 /* Main.storyboard */,
+			);
+			path = views;
+			sourceTree = "<group>";
+		};
+		5B6B72C12244EB0D00A344E6 /* config */ = {
+			isa = PBXGroup;
+			children = (
+				5B6B728E2244EAA400A344E6 /* AppDelegate.swift */,
+			);
+			path = config;
+			sourceTree = "<group>";
+		};
+		5B6B72C22244EBA200A344E6 /* uiComponents */ = {
+			isa = PBXGroup;
+			children = (
+				5B6B72C32244EBD500A344E6 /* AlertDialog.swift */,
+			);
+			path = uiComponents;
+			sourceTree = "<group>";
+		};
+		5B6B72C62244EC7B00A344E6 /* services */ = {
+			isa = PBXGroup;
+			children = (
+				5B6B72CA2244EEC900A344E6 /* DataExchangeServiceTests.swift */,
+			);
+			path = services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -256,7 +332,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5B6B72C42244EBD500A344E6 /* AlertDialog.swift in Sources */,
 				5B6B72912244EAA400A344E6 /* ViewController.swift in Sources */,
+				5B6B72C82244ECB500A344E6 /* DataExchangeService.swift in Sources */,
 				5B6B728F2244EAA400A344E6 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -265,7 +343,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5B6B72C52244EBD500A344E6 /* AlertDialog.swift in Sources */,
 				5B6B72A42244EAA700A344E6 /* unit_testingTests.swift in Sources */,
+				5B6B72CD2244F02400A344E6 /* DataExchangeServiceTests.swift in Sources */,
+				5B6B72C92244ECB500A344E6 /* DataExchangeService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -273,6 +354,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5B6B72D02244F09000A344E6 /* DataExchangeServiceTests.swift in Sources */,
 				5B6B72AF2244EAA700A344E6 /* unit_testingUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -433,6 +515,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = L7WK77VYXN;
 				INFOPLIST_FILE = "unit-testing/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -450,6 +533,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = L7WK77VYXN;
 				INFOPLIST_FILE = "unit-testing/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
